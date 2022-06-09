@@ -48,16 +48,20 @@
             this.service1 = new System.Windows.Forms.RadioButton();
             this.Address = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.groupBoxforservice = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBoxforservice.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -84,7 +88,7 @@
             // 
             // birthdayPerson
             // 
-            this.birthdayPerson.Location = new System.Drawing.Point(33, 191);
+            this.birthdayPerson.Location = new System.Drawing.Point(33, 194);
             this.birthdayPerson.Name = "birthdayPerson";
             this.birthdayPerson.Size = new System.Drawing.Size(208, 23);
             this.birthdayPerson.TabIndex = 2;
@@ -103,7 +107,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(266, 169);
+            this.label3.Location = new System.Drawing.Point(266, 172);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 18);
             this.label3.TabIndex = 4;
@@ -123,7 +127,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(33, 170);
+            this.label4.Location = new System.Drawing.Point(33, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 18);
             this.label4.TabIndex = 6;
@@ -138,7 +142,7 @@
             // 
             // agePerson
             // 
-            this.agePerson.Location = new System.Drawing.Point(266, 190);
+            this.agePerson.Location = new System.Drawing.Point(266, 193);
             this.agePerson.Name = "agePerson";
             this.agePerson.Size = new System.Drawing.Size(77, 23);
             this.agePerson.TabIndex = 8;
@@ -205,17 +209,18 @@
             this.typeService.AutoSize = true;
             this.typeService.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.typeService.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.typeService.Location = new System.Drawing.Point(33, 401);
+            this.typeService.Location = new System.Drawing.Point(34, 407);
             this.typeService.Name = "typeService";
             this.typeService.Size = new System.Drawing.Size(92, 18);
             this.typeService.TabIndex = 14;
             this.typeService.Text = "Service Mode";
+            this.typeService.Click += new System.EventHandler(this.typeService_Click);
             // 
             // service2
             // 
             this.service2.AutoSize = true;
             this.service2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.service2.Location = new System.Drawing.Point(33, 449);
+            this.service2.Location = new System.Drawing.Point(28, 47);
             this.service2.Name = "service2";
             this.service2.Size = new System.Drawing.Size(69, 19);
             this.service2.TabIndex = 16;
@@ -227,7 +232,7 @@
             // 
             this.service1.AutoSize = true;
             this.service1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.service1.Location = new System.Drawing.Point(33, 424);
+            this.service1.Location = new System.Drawing.Point(28, 22);
             this.service1.Name = "service1";
             this.service1.Size = new System.Drawing.Size(64, 19);
             this.service1.TabIndex = 15;
@@ -251,15 +256,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(488, 23);
             this.textBox1.TabIndex = 18;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 380);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(224, 120);
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
             // 
             // textBox2
             // 
@@ -320,22 +316,78 @@
     "er individuals or organizations without your\r\npermission, including public organ" +
     "izations, corporations, or individuals.";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(33, 290);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(132, 18);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Are you vaccinated?";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(168, 315);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(41, 19);
+            this.radioButton1.TabIndex = 30;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "No";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(33, 315);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(117, 19);
+            this.radioButton2.TabIndex = 29;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Yes, 1st dose only";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(33, 340);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(251, 19);
+            this.radioButton3.TabIndex = 28;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Yes, I\'m fully vaccinated (1st and 2nd dose)";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxforservice
+            // 
+            this.groupBoxforservice.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBoxforservice.Controls.Add(this.service1);
+            this.groupBoxforservice.Controls.Add(this.service2);
+            this.groupBoxforservice.Location = new System.Drawing.Point(33, 407);
+            this.groupBoxforservice.Name = "groupBoxforservice";
+            this.groupBoxforservice.Size = new System.Drawing.Size(200, 89);
+            this.groupBoxforservice.TabIndex = 31;
+            this.groupBoxforservice.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(553, 512);
+            this.Controls.Add(this.typeService);
+            this.Controls.Add(this.groupBoxforservice);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.service2);
-            this.Controls.Add(this.service1);
-            this.Controls.Add(this.typeService);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Address);
             this.Controls.Add(this.pictureBox2);
@@ -359,7 +411,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.groupBoxforservice.ResumeLayout(false);
+            this.groupBoxforservice.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,12 +439,16 @@
         private RadioButton service1;
         private Label Address;
         private TextBox textBox1;
-        private PictureBox pictureBox3;
         private TextBox textBox2;
         private Label label5;
         private Label label6;
         private Label label7;
         private TextBox textBox3;
         private Label label8;
+        private Label label9;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
+        private RadioButton radioButton3;
+        private GroupBox groupBoxforservice;
     }
 }

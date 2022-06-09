@@ -25,6 +25,14 @@ namespace ACTIVITY_NO._3
 
         }
 
+        private void officialweb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+          
+        }
 
+        private void typeService_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
