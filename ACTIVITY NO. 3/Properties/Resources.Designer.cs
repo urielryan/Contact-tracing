@@ -59,5 +59,16 @@ namespace ACTIVITY_NO._3.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_spoon_fork_cutlery_computer_icons_spoon_and_fork_text_plate_logo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-spoon-fork-cutlery-computer-icons-spoon-and-fork-text-plate-logo-" +
+                        "removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
