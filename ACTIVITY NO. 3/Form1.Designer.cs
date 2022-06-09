@@ -59,9 +59,13 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.groupBoxforservice = new System.Windows.Forms.GroupBox();
+            this.groupBoxforvaccine = new System.Windows.Forms.GroupBox();
+            this.groupBoxforgender = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBoxforservice.SuspendLayout();
+            this.groupBoxforvaccine.SuspendLayout();
+            this.groupBoxforgender.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -150,7 +154,7 @@
             // genderPerson3
             // 
             this.genderPerson3.AutoSize = true;
-            this.genderPerson3.Location = new System.Drawing.Point(375, 190);
+            this.genderPerson3.Location = new System.Drawing.Point(6, 69);
             this.genderPerson3.Name = "genderPerson3";
             this.genderPerson3.Size = new System.Drawing.Size(111, 19);
             this.genderPerson3.TabIndex = 9;
@@ -161,7 +165,7 @@
             // genderPerson1
             // 
             this.genderPerson1.AutoSize = true;
-            this.genderPerson1.Location = new System.Drawing.Point(375, 140);
+            this.genderPerson1.Location = new System.Drawing.Point(6, 19);
             this.genderPerson1.Name = "genderPerson1";
             this.genderPerson1.Size = new System.Drawing.Size(51, 19);
             this.genderPerson1.TabIndex = 10;
@@ -172,7 +176,7 @@
             // genderPerson2
             // 
             this.genderPerson2.AutoSize = true;
-            this.genderPerson2.Location = new System.Drawing.Point(375, 165);
+            this.genderPerson2.Location = new System.Drawing.Point(6, 44);
             this.genderPerson2.Name = "genderPerson2";
             this.genderPerson2.Size = new System.Drawing.Size(63, 19);
             this.genderPerson2.TabIndex = 11;
@@ -208,10 +212,10 @@
             // 
             this.typeService.AutoSize = true;
             this.typeService.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.typeService.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.typeService.Location = new System.Drawing.Point(34, 407);
+            this.typeService.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.typeService.Location = new System.Drawing.Point(45, 411);
             this.typeService.Name = "typeService";
-            this.typeService.Size = new System.Drawing.Size(92, 18);
+            this.typeService.Size = new System.Drawing.Size(93, 18);
             this.typeService.TabIndex = 14;
             this.typeService.Text = "Service Mode";
             this.typeService.Click += new System.EventHandler(this.typeService_Click);
@@ -220,7 +224,7 @@
             // 
             this.service2.AutoSize = true;
             this.service2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.service2.Location = new System.Drawing.Point(28, 47);
+            this.service2.Location = new System.Drawing.Point(30, 65);
             this.service2.Name = "service2";
             this.service2.Size = new System.Drawing.Size(69, 19);
             this.service2.TabIndex = 16;
@@ -232,7 +236,7 @@
             // 
             this.service1.AutoSize = true;
             this.service1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.service1.Location = new System.Drawing.Point(28, 22);
+            this.service1.Location = new System.Drawing.Point(30, 40);
             this.service1.Name = "service1";
             this.service1.Size = new System.Drawing.Size(64, 19);
             this.service1.TabIndex = 15;
@@ -320,7 +324,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(33, 290);
+            this.label9.Location = new System.Drawing.Point(27, 290);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(132, 18);
             this.label9.TabIndex = 27;
@@ -329,7 +333,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(168, 315);
+            this.radioButton1.Location = new System.Drawing.Point(143, 16);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(41, 19);
             this.radioButton1.TabIndex = 30;
@@ -340,7 +344,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(33, 315);
+            this.radioButton2.Location = new System.Drawing.Point(8, 16);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(117, 19);
             this.radioButton2.TabIndex = 29;
@@ -351,7 +355,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(33, 340);
+            this.radioButton3.Location = new System.Drawing.Point(8, 41);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(251, 19);
             this.radioButton3.TabIndex = 28;
@@ -364,11 +368,34 @@
             this.groupBoxforservice.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBoxforservice.Controls.Add(this.service1);
             this.groupBoxforservice.Controls.Add(this.service2);
-            this.groupBoxforservice.Location = new System.Drawing.Point(33, 407);
+            this.groupBoxforservice.Location = new System.Drawing.Point(33, 399);
             this.groupBoxforservice.Name = "groupBoxforservice";
-            this.groupBoxforservice.Size = new System.Drawing.Size(200, 89);
+            this.groupBoxforservice.Size = new System.Drawing.Size(176, 101);
             this.groupBoxforservice.TabIndex = 31;
             this.groupBoxforservice.TabStop = false;
+            // 
+            // groupBoxforvaccine
+            // 
+            this.groupBoxforvaccine.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxforvaccine.Controls.Add(this.radioButton3);
+            this.groupBoxforvaccine.Controls.Add(this.radioButton2);
+            this.groupBoxforvaccine.Controls.Add(this.radioButton1);
+            this.groupBoxforvaccine.Location = new System.Drawing.Point(33, 311);
+            this.groupBoxforvaccine.Name = "groupBoxforvaccine";
+            this.groupBoxforvaccine.Size = new System.Drawing.Size(260, 67);
+            this.groupBoxforvaccine.TabIndex = 32;
+            this.groupBoxforvaccine.TabStop = false;
+            // 
+            // groupBoxforgender
+            // 
+            this.groupBoxforgender.Controls.Add(this.genderPerson2);
+            this.groupBoxforgender.Controls.Add(this.genderPerson3);
+            this.groupBoxforgender.Controls.Add(this.genderPerson1);
+            this.groupBoxforgender.Location = new System.Drawing.Point(375, 132);
+            this.groupBoxforgender.Name = "groupBoxforgender";
+            this.groupBoxforgender.Size = new System.Drawing.Size(120, 100);
+            this.groupBoxforgender.TabIndex = 33;
+            this.groupBoxforgender.TabStop = false;
             // 
             // Form1
             // 
@@ -376,11 +403,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(553, 512);
+            this.Controls.Add(this.groupBoxforgender);
+            this.Controls.Add(this.groupBoxforvaccine);
             this.Controls.Add(this.typeService);
             this.Controls.Add(this.groupBoxforservice);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox3);
@@ -392,9 +418,6 @@
             this.Controls.Add(this.Address);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataSaver);
-            this.Controls.Add(this.genderPerson2);
-            this.Controls.Add(this.genderPerson1);
-            this.Controls.Add(this.genderPerson3);
             this.Controls.Add(this.agePerson);
             this.Controls.Add(this.namePerson);
             this.Controls.Add(this.label4);
@@ -413,6 +436,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBoxforservice.ResumeLayout(false);
             this.groupBoxforservice.PerformLayout();
+            this.groupBoxforvaccine.ResumeLayout(false);
+            this.groupBoxforvaccine.PerformLayout();
+            this.groupBoxforgender.ResumeLayout(false);
+            this.groupBoxforgender.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,5 +477,7 @@
         private RadioButton radioButton2;
         private RadioButton radioButton3;
         private GroupBox groupBoxforservice;
+        private GroupBox groupBoxforvaccine;
+        private GroupBox groupBoxforgender;
     }
 }
