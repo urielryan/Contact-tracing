@@ -19,9 +19,14 @@ namespace ACTIVITY_NO._3
 
         private void dataSaver_Click(object sender, EventArgs e)
         {
-            StreamWriter save = new StreamWriter(@"D:\Users\HP\Downloads\Saved Data\person.txt");
-            save.WriteLine("hi");
-            save.Close();
+            StreamWriter submit = File.AppendText(@"D:\Users\HP\Downloads\Saved Data\Angel's Burger Customer.txt");
+            submit.WriteLine("FULL NAME: " + namePerson2.Text + ", " + namePerson.Text);
+            submit.WriteLine("DATE OF BIRTH: " + birthdayPerson.Text);
+            submit.WriteLine("AGE: " + agePerson.Text);
+            submit.WriteLine("ADDRESS: " + addressBox.Text);
+            submit.WriteLine("CONTACT NUMBER:" + contactNumberbox.Text);
+            submit.WriteLine("");
+            submit.Close();
 
         }
 

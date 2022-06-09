@@ -47,12 +47,12 @@
             this.service2 = new System.Windows.Forms.RadioButton();
             this.service1 = new System.Windows.Forms.RadioButton();
             this.Address = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.addressBox = new System.Windows.Forms.TextBox();
+            this.namePerson2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.contactNumberbox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -254,19 +254,19 @@
             this.Address.TabIndex = 17;
             this.Address.Text = "Full Address";
             // 
-            // textBox1
+            // addressBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(33, 255);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(488, 23);
-            this.textBox1.TabIndex = 18;
+            this.addressBox.Location = new System.Drawing.Point(33, 255);
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(488, 23);
+            this.addressBox.TabIndex = 18;
             // 
-            // textBox2
+            // namePerson2
             // 
-            this.textBox2.Location = new System.Drawing.Point(168, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(129, 23);
-            this.textBox2.TabIndex = 21;
+            this.namePerson2.Location = new System.Drawing.Point(168, 132);
+            this.namePerson2.Name = "namePerson2";
+            this.namePerson2.Size = new System.Drawing.Size(129, 23);
+            this.namePerson2.TabIndex = 21;
             // 
             // label5
             // 
@@ -300,12 +300,12 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "Phone Number";
             // 
-            // textBox3
+            // contactNumberbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(375, 311);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 23);
-            this.textBox3.TabIndex = 25;
+            this.contactNumberbox.Location = new System.Drawing.Point(375, 311);
+            this.contactNumberbox.Name = "contactNumberbox";
+            this.contactNumberbox.Size = new System.Drawing.Size(146, 23);
+            this.contactNumberbox.TabIndex = 25;
             // 
             // label8
             // 
@@ -409,12 +409,12 @@
             this.Controls.Add(this.groupBoxforservice);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.contactNumberbox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.namePerson2);
+            this.Controls.Add(this.addressBox);
             this.Controls.Add(this.Address);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataSaver);
@@ -465,12 +465,12 @@
         private RadioButton service2;
         private RadioButton service1;
         private Label Address;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox addressBox;
+        private TextBox namePerson2;
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox textBox3;
+        private TextBox contactNumberbox;
         private Label label8;
         private Label label9;
         private RadioButton radioButton1;
