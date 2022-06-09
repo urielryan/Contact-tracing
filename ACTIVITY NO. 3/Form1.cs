@@ -16,5 +16,15 @@ namespace ACTIVITY_NO._3
         {
 
         }
+
+        private void dataSaver_Click(object sender, EventArgs e)
+        {
+            StreamWriter save = new StreamWriter(@"D:\Users\HP\Downloads\Saved Data\person.txt");
+            save.WriteLine("hi");
+            save.Close();
+
+        }
+
+
     }
 }
