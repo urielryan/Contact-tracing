@@ -55,12 +55,13 @@
             this.contactNumberbox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.vaccinebtn3 = new System.Windows.Forms.RadioButton();
+            this.vaccinebtn1 = new System.Windows.Forms.RadioButton();
+            this.vaccinebtn2 = new System.Windows.Forms.RadioButton();
             this.groupBoxforservice = new System.Windows.Forms.GroupBox();
             this.groupBoxforvaccine = new System.Windows.Forms.GroupBox();
             this.groupBoxforgender = new System.Windows.Forms.GroupBox();
+            this.nextForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBoxforservice.SuspendLayout();
@@ -76,7 +77,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(758, 62);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -88,7 +88,6 @@
             this.label1.Size = new System.Drawing.Size(264, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Contact Tracing Form";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // birthdayPerson
             // 
@@ -194,7 +193,6 @@
             this.dataSaver.TabIndex = 12;
             this.dataSaver.Text = "Submit";
             this.dataSaver.UseVisualStyleBackColor = false;
-            this.dataSaver.Click += new System.EventHandler(this.dataSaver_Click);
             // 
             // pictureBox2
             // 
@@ -218,7 +216,6 @@
             this.typeService.Size = new System.Drawing.Size(93, 18);
             this.typeService.TabIndex = 14;
             this.typeService.Text = "Service Mode";
-            this.typeService.Click += new System.EventHandler(this.typeService_Click);
             // 
             // service2
             // 
@@ -330,38 +327,38 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Are you vaccinated?";
             // 
-            // radioButton1
+            // vaccinebtn3
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(143, 16);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(41, 19);
-            this.radioButton1.TabIndex = 30;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "No";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.vaccinebtn3.AutoSize = true;
+            this.vaccinebtn3.Location = new System.Drawing.Point(143, 16);
+            this.vaccinebtn3.Name = "vaccinebtn3";
+            this.vaccinebtn3.Size = new System.Drawing.Size(41, 19);
+            this.vaccinebtn3.TabIndex = 30;
+            this.vaccinebtn3.TabStop = true;
+            this.vaccinebtn3.Text = "No";
+            this.vaccinebtn3.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // vaccinebtn1
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(8, 16);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(117, 19);
-            this.radioButton2.TabIndex = 29;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Yes, 1st dose only";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.vaccinebtn1.AutoSize = true;
+            this.vaccinebtn1.Location = new System.Drawing.Point(8, 16);
+            this.vaccinebtn1.Name = "vaccinebtn1";
+            this.vaccinebtn1.Size = new System.Drawing.Size(117, 19);
+            this.vaccinebtn1.TabIndex = 29;
+            this.vaccinebtn1.TabStop = true;
+            this.vaccinebtn1.Text = "Yes, 1st dose only";
+            this.vaccinebtn1.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // vaccinebtn2
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(8, 41);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(251, 19);
-            this.radioButton3.TabIndex = 28;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Yes, I\'m fully vaccinated (1st and 2nd dose)";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.vaccinebtn2.AutoSize = true;
+            this.vaccinebtn2.Location = new System.Drawing.Point(8, 41);
+            this.vaccinebtn2.Name = "vaccinebtn2";
+            this.vaccinebtn2.Size = new System.Drawing.Size(251, 19);
+            this.vaccinebtn2.TabIndex = 28;
+            this.vaccinebtn2.TabStop = true;
+            this.vaccinebtn2.Text = "Yes, I\'m fully vaccinated (1st and 2nd dose)";
+            this.vaccinebtn2.UseVisualStyleBackColor = true;
             // 
             // groupBoxforservice
             // 
@@ -377,9 +374,9 @@
             // groupBoxforvaccine
             // 
             this.groupBoxforvaccine.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxforvaccine.Controls.Add(this.radioButton3);
-            this.groupBoxforvaccine.Controls.Add(this.radioButton2);
-            this.groupBoxforvaccine.Controls.Add(this.radioButton1);
+            this.groupBoxforvaccine.Controls.Add(this.vaccinebtn2);
+            this.groupBoxforvaccine.Controls.Add(this.vaccinebtn1);
+            this.groupBoxforvaccine.Controls.Add(this.vaccinebtn3);
             this.groupBoxforvaccine.Location = new System.Drawing.Point(33, 311);
             this.groupBoxforvaccine.Name = "groupBoxforvaccine";
             this.groupBoxforvaccine.Size = new System.Drawing.Size(260, 67);
@@ -397,12 +394,22 @@
             this.groupBoxforgender.TabIndex = 33;
             this.groupBoxforgender.TabStop = false;
             // 
+            // nextForm
+            // 
+            this.nextForm.Location = new System.Drawing.Point(256, 477);
+            this.nextForm.Name = "nextForm";
+            this.nextForm.Size = new System.Drawing.Size(75, 23);
+            this.nextForm.TabIndex = 34;
+            this.nextForm.UseVisualStyleBackColor = true;
+            this.nextForm.Click += new System.EventHandler(this.nextForm_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(553, 512);
+            this.Controls.Add(this.nextForm);
             this.Controls.Add(this.groupBoxforgender);
             this.Controls.Add(this.groupBoxforvaccine);
             this.Controls.Add(this.typeService);
@@ -473,11 +480,17 @@
         private TextBox contactNumberbox;
         private Label label8;
         private Label label9;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton3;
+        private RadioButton vaccinebtn3;
+        private RadioButton vaccinebtn1;
+        private RadioButton vaccinebtn2;
         private GroupBox groupBoxforservice;
         private GroupBox groupBoxforvaccine;
         private GroupBox groupBoxforgender;
+        private EventHandler pictureBox1_Click;
+        private EventHandler label1_Click;
+        private EventHandler dataSaver_Click;
+        private EventHandler typeService_Click;
+        private EventHandler groupBoxforvaccine_Enter;
+        private Button nextForm;
     }
 }

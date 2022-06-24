@@ -7,17 +7,11 @@ namespace ACTIVITY_NO._3
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+        
 
-        }
+       
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataSaver_Click(object sender, EventArgs e)
+        private void DataSaver_Click(object sender, EventArgs e)
         {
             StreamWriter submit = File.AppendText(@"D:\Users\HP\Downloads\Saved Data\Angel's Burger Customer.txt");
             submit.WriteLine("FULL NAME: " + namePerson2.Text + ", " + namePerson.Text);
@@ -25,19 +19,32 @@ namespace ACTIVITY_NO._3
             submit.WriteLine("AGE: " + agePerson.Text);
             submit.WriteLine("ADDRESS: " + addressBox.Text);
             submit.WriteLine("CONTACT NUMBER:" + contactNumberbox.Text);
-            submit.WriteLine("");
-            submit.Close();
-
-        }
-
-        private void officialweb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
           
-        }
+            //if vaccinated part 1
+            if (vaccinebtn1.Checked) ;
+            {
+                submit.WriteLine("VACCINATED: Yes");
 
-        private void typeService_Click(object sender, EventArgs e)
+                if (vaccinebtn2.Checked) ;
+                submit.WriteLine("VACCINATED: NEH");
+
+                submit.Close();
+            }
+           
+
+                submit.Close();
+            }
+
+        private void nextForm_Click(object sender, EventArgs e)
         {
-
+            Form2 f2 = new Form2();
+            f2.Show();
+            this.Hide();
         }
     }
-}
+
+       
+        
+
+          
+        }
