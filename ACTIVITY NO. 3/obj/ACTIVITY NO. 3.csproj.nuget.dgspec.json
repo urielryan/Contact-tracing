@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\ACTIVITY NO. 3\\ACTIVITY NO. 3\\ACTIVITY NO. 3.csproj": {}
+    "C:\\Users\\HP\\source\\repos\\Contact-tracing\\ANOTHER LIFE\\ACTIVITY NO. 3\\ACTIVITY NO. 3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\ACTIVITY NO. 3\\ACTIVITY NO. 3\\ACTIVITY NO. 3.csproj": {
+    "C:\\Users\\HP\\source\\repos\\Contact-tracing\\ANOTHER LIFE\\ACTIVITY NO. 3\\ACTIVITY NO. 3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ACTIVITY NO. 3\\ACTIVITY NO. 3\\ACTIVITY NO. 3.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Contact-tracing\\ANOTHER LIFE\\ACTIVITY NO. 3\\ACTIVITY NO. 3.csproj",
         "projectName": "ACTIVITY NO. 3",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\ACTIVITY NO. 3\\ACTIVITY NO. 3\\ACTIVITY NO. 3.csproj",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\Contact-tracing\\ANOTHER LIFE\\ACTIVITY NO. 3\\ACTIVITY NO. 3.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\ACTIVITY NO. 3\\ACTIVITY NO. 3\\obj\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\Contact-tracing\\ANOTHER LIFE\\ACTIVITY NO. 3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
